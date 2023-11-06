@@ -104,7 +104,7 @@ function _init_repo() {
     if [[ ! -d $INSTALLER_TARGET_DIR/$REPO ]]; then
         log "... ... cloning repo: "$REPO
         pushd $INSTALLER_TARGET_DIR
-        git clone -q https://github.com/ES-DOC/$REPO.git
+        git clone -q -b dev-v2 https://github.com/ES-DOC/$REPO.git
         popd
     else
         pushd $INSTALLER_TARGET_DIR/$REPO
