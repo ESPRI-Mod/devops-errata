@@ -89,6 +89,7 @@ function _install_ops_config()
 function _install_ops_fsys()
 {
     _install_ops_fsys_dirs "esdoc-errata-ws"
+    _install_ops_fsys_dirs "pyessv-ws"
 }
 
 # Initialise ops directories.
