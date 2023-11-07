@@ -76,6 +76,13 @@ function _install_ops_config()
     if [[ ! -f $INSTALLER_TARGET_DIR/esdoc-errata-ws/ops/config/supervisord.conf ]]; then
         cp $INSTALLER_HOME/templates/ws-supervisord-errata.conf $INSTALLER_TARGET_DIR/esdoc-errata-ws/ops/config/supervisord.conf
     fi
+    # Config -> pyessv-ws.
+    if [[ ! -f $INSTALLER_TARGET_DIR/pyessv-ws/ops/config/ws.conf ]]; then
+        cat $INSTALLER_HOME/templates/ws-app-pyessv.conf >> $INSTALLER_TARGET_DIR/pyessv-ws/ops/config/ws.conf
+    fi
+    if [[ ! -f $INSTALLER_TARGET_DIR/pyessv-ws/ops/config/supervisord.conf ]]; then
+        cp $INSTALLER_HOME/templates/ws-supervisord-pyessv.conf $INSTALLER_TARGET_DIR/pyessv-ws/ops/config/supervisord.conf
+    fi
 }
 
 # Initialise ops file system.
