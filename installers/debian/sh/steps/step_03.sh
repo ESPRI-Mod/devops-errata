@@ -10,6 +10,7 @@ main()
 
     log "... step 3.1: initialising python 3"
     init_python $INSTALLER_PYTHON_3
+    init_python $INSTALLER_PYTHON_2
 
     log "END step 3"
 }
