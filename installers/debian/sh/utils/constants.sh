@@ -10,4 +10,5 @@ declare -a INSTALLER_REPOS=(
     'esdoc-errata-fe'
     'esdoc-errata-ws'
     'pyessv-archive'
+    'pyessv-ws'
 )
